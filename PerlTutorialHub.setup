@@ -1,10 +1,10 @@
 #!/usr/bin/perl
 #
 # Setup file for ikiwiki.
-# 
+#
 # Passing this to ikiwiki --setup will make ikiwiki generate
 # wrappers and build the wiki.
-# 
+#
 # Remember to re-run ikiwiki --setup any time you edit this file.
 use IkiWiki::Setup::Standard {
 	# name of the wiki
@@ -30,7 +30,7 @@ use IkiWiki::Setup::Standard {
 	# rcs backend to use
 	rcs => 'git',
 	# plugins to add to the default configuration
-	add_plugins => [qw{goodstuff websetup highlight google theme plusone}],
+	add_plugins => [qw{goodstuff websetup highlight google theme plusone easehtmlscrubber }],
 	# plugins to disable
 	disable_plugins => [qw{search edittemplate rawhtml localstyle pagetemplate}],
 	# additional directory to search for template files
