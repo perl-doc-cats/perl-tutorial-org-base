@@ -396,6 +396,8 @@ sub parse_yml {
 
     if ($yml_str)
     {
+       $yml_str .= "\n"; # whatever gets the data here strips all trailing whitespace, so this needs to be added
+
 	# if {{$page}} is there, do an immediate substitution
 	$yml_str =~ s/\{\{\$page\}\}/$page/sg;
 
