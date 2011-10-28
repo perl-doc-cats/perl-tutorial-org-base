@@ -64,7 +64,7 @@ use IkiWiki::Setup::Standard {
 	# UTF-8 locale to use
 	#locale => 'en_US.UTF-8',
 	# put user pages below specified page
-	userdir => '',
+	userdir => 'users',
 	# how many backlinks to show before hiding excess (0 to show all)
 	numbacklinks => 10,
 	# attempt to hardlink source files? (optimisation for large files)
