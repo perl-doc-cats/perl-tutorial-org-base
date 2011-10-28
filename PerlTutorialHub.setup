@@ -1,10 +1,10 @@
 #!/usr/bin/perl
 #
 # Setup file for ikiwiki.
-#
+# 
 # Passing this to ikiwiki --setup will make ikiwiki generate
 # wrappers and build the wiki.
-#
+# 
 # Remember to re-run ikiwiki --setup any time you edit this file.
 use IkiWiki::Setup::Standard {
 	# name of the wiki
@@ -51,7 +51,7 @@ use IkiWiki::Setup::Standard {
 	discussion => 1,
 	# name of Discussion pages
 	discussionpage => 'Discussion',
-	# generate HTML5? (experimental)
+	# generate HTML5?
 	html5 => 0,
 	# only send cookies over SSL connections?
 	sslcookie => 0,
@@ -77,6 +77,8 @@ use IkiWiki::Setup::Standard {
 	libdir => '/home/perltuthub/.ikiwiki',
 	# environment variables
 	ENV => {},
+	# time zone name
+	#timezone => 'US/Eastern',
 	# regexp of normally excluded files to include
 	#include => '^\\.htaccess$',
 	# regexp of files that should be skipped
@@ -242,10 +244,10 @@ use IkiWiki::Setup::Standard {
 	######################################################################
 	# widget plugins
 	#   (calendar, color, conditional, cutpaste, date, format, fortune,
-	#    graphviz, haiku, img, linkmap, listdirectives, map, more,
-	#    orphans, pagecount, pagestats, poll, polygen, postsparkline,
-	#    progress, shortcut, sparkline, table, template, teximg, toc,
-	#    toggle, version)
+	#    graphviz, haiku, headinganchors, img, linkmap, listdirectives,
+	#    map, more, orphans, pagecount, pagestats, poll, polygen,
+	#    postsparkline, progress, shortcut, sparkline, table, template,
+	#    teximg, toc, toggle, version)
 	######################################################################
 
 	# calendar plugin
@@ -263,6 +265,7 @@ use IkiWiki::Setup::Standard {
 	#teximg_dvipng => '',
 	# LaTeX prefix for teximg plugin
 	#teximg_prefix => '\\documentclass{article}
+	#\\usepackage[utf8]{inputenc}
 	#\\usepackage{amsmath}
 	#\\usepackage{amsfonts}
 	#\\usepackage{amssymb}
@@ -275,10 +278,11 @@ use IkiWiki::Setup::Standard {
 	######################################################################
 	# other plugins
 	#   (aggregate, autoindex, brokenlinks, camelcase, ddate, embed,
-	#    favicon, goodstuff, htmlbalance, localstyle, pagetemplate,
-	#    pingee, pinger, plusone, prettydate, recentchanges,
-	#    recentchangesdiff, relativedate, rsync, sidebar, smiley,
-	#    sortnaturally, tag, testpagespec, underlay)
+	#    favicon, flattr, goodstuff, htmlbalance, localstyle,
+	#    pagetemplate, pingee, pinger, plusone, prettydate,
+	#    recentchanges, recentchangesdiff, relativedate, rsync,
+	#    sidebar, smiley, sortnaturally, tag, testpagespec, transient,
+	#    underlay)
 	######################################################################
 
 	# aggregate plugin
@@ -290,6 +294,10 @@ use IkiWiki::Setup::Standard {
 	# camelcase plugin
 	# list of words to not turn into links
 	#camelcase_ignore => [],
+
+	# flattr plugin
+	# userid or user name to use by default for Flattr buttons
+	#flattr_userid => 'joeyh',
 
 	# pinger plugin
 	# how many seconds to try pinging before timing out
