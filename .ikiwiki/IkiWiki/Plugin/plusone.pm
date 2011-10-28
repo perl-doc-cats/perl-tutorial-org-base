@@ -158,10 +158,10 @@ sub plus1js {
     po.src = 'https://apis.google.com/js/plusone.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
   })();
-</script>};
+</script>
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>};
 
     return $js;
 }
 
 1;
-
