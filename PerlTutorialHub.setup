@@ -34,9 +34,9 @@ use IkiWiki::Setup::Standard {
 	# plugins to disable
 	disable_plugins => [qw{search edittemplate rawhtml localstyle pagetemplate}],
 	# additional directory to search for template files
-	templatedir => '/usr/share/ikiwiki/templates',
+	templatedir => '/usr/local/share/ikiwiki/templates',
 	# base wiki source location
-	underlaydir => '/usr/share/ikiwiki/basewiki',
+	underlaydir => '/usr/local/share/ikiwiki/basewiki',
 	# display verbose messages?
 	verbose => 1,
 	# log to syslog?
