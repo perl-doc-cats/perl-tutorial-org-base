@@ -147,15 +147,21 @@ my $plus1js_cached;
 sub plus1js {
     return $plus1js_cached if defined $plus1js_cached;
 
-    my $js = '<script type="text/javascript" src="https://apis.google.com/js/plusone.js">';
+    my $lang = "";
+    $lang = "window.___gcfg = {lang: '$config{plusone_lang}'};" if defined $config{plusone_lang};
 
-    if ( defined $config{plusone_lang} ) {
-        $js .= "{lang: '" . $config{plusone_lang} . "'}";
-    }
-    $js .= '</script>';
+    my $js = qq{<script type="text/javascript">
+  $lang
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>};
 
     return $js;
 }
 
-1
+1;
 
