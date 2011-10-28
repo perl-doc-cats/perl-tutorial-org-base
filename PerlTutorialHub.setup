@@ -295,6 +295,14 @@ use IkiWiki::Setup::Standard {
 	aggregateinternal => 1,
 	# allow aggregation to be triggered via the web?
 	#aggregate_webtrigger => 0,
+	# cookie control
+	cookiejar => {
+	  file => '/home/perltuthub/.ikiwiki/cookies'
+	},
+
+	# autoindex plugin
+	# commit autocreated index pages
+	autoindex_commit => 1,
 
 	# camelcase plugin
 	# list of words to not turn into links
@@ -339,6 +347,8 @@ use IkiWiki::Setup::Standard {
 	#tagbase => 'tag',
 	# autocreate new tag pages?
 	#tag_autocreate => 1,
+	# commit autocreated tag pages
+	tag_autocreate_commit => 1,
 
 	# underlay plugin
 	# extra underlay directories to add
