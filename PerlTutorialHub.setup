@@ -228,7 +228,7 @@ use IkiWiki::Setup::Standard {
 
 	# repolist plugin
 	# URIs of repositories containing the wiki's source
-	#repositories => [qw{svn://svn.example.org/wiki/trunk}],
+	repositories => [qw{https://github.com/Perl-Tutorial-Curators/perltut-base https://github.com/Perl-Tutorial-Curators/perltut-data}],
 
 	# search plugin
 	# path to the omega cgi program
