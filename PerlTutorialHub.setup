@@ -181,6 +181,10 @@ use IkiWiki::Setup::Standard {
 	# highlight plugin
 	# types of source files to syntax highlight
 	tohighlight => '.c .h .cpp .pl .py Makefile:make',
+	# location of highlight's filetypes.conf
+	filetypes_conf => '/etc/highlight/filetypes.conf',
+	# location of highlight's langDefs directory
+	langdefdir => '/usr/share/highlight/langDefs',
 
 	# mdwn plugin
 	# enable multimarkdown features?
