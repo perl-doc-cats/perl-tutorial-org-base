@@ -21,11 +21,13 @@ sub getsetup () {
 }
 
 sub easehtmlscrubber {
+    my %params=@_;
+    
     my $scrubber = IkiWiki::Plugin::htmlscrubber::scrubber();
 
     $scrubber->{_rules}{_}{$_} = 1 for qw( data-url data-text data-count );
 
-    return;
+    return $params{content};
 }
 
 1;
