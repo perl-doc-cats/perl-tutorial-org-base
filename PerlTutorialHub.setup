@@ -12,7 +12,7 @@ use IkiWiki::Setup::Standard {
 	# contact email for wiki
 	adminemail => 'walde.christian@googlemail.com',
 	# users who are wiki admins
-	adminuser => [qw{perltuthub}],
+	adminuser => [qw{Mithaldu perltuthub}],
 	# users who are banned from the wiki
 	banned_users => [],
 	# where the source of the wiki is located
