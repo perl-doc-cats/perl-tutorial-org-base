@@ -7,8 +7,6 @@ use strict;
 use IkiWiki 3.00;
 use YAML::Any 'Load';
 
-our %pagesources;
-
 sub import {
     hook(
         type => "getsetup",    #
