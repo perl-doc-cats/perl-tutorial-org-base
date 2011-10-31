@@ -50,7 +50,7 @@ use IkiWiki::Setup::Standard {
 	# enable Discussion pages?
 	discussion => 1,
 	# name of Discussion pages
-	discussionpage => 'Discussion',
+	discussionpage => 'discussion',
 	# generate HTML5?
 	html5 => 0,
 	# only send cookies over SSL connections?
@@ -252,7 +252,7 @@ use IkiWiki::Setup::Standard {
 	#    graphviz, haiku, headinganchors, img, linkmap, listdirectives,
 	#    map, more, orphans, pagecount, pagestats, poll, polygen,
 	#    postsparkline, progress, shortcut, sparkline, table, template,
-	#    teximg, toc, toggle, version)
+	#    teximg, toc, toggle, version, ytemplate)
 	######################################################################
 
 	# calendar plugin
