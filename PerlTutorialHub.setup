@@ -30,9 +30,9 @@ use IkiWiki::Setup::Standard {
 	# rcs backend to use
 	rcs => 'git',
 	# plugins to add to the default configuration
-	add_plugins => [qw{goodstuff websetup highlight google theme plusone easehtmlscrubber userlist sidebar ytemplate}],
+	add_plugins => [qw{goodstuff websetup highlight google plusone easehtmlscrubber userlist sidebar ytemplate}],
 	# plugins to disable
-	disable_plugins => [qw{search edittemplate rawhtml localstyle pagetemplate}],
+	disable_plugins => [qw{search edittemplate rawhtml localstyle pagetemplate theme}],
 	# additional directory to search for template files
 	templatedir => '/usr/local/share/ikiwiki/templates',
 	# base wiki source location
@@ -236,7 +236,7 @@ use IkiWiki::Setup::Standard {
 
 	# theme plugin
 	# name of theme to enable
-	theme => 'actiontabs',
+	theme => '',
 
 	# websetup plugin
 	# list of plugins that cannot be enabled/disabled via the web interface
