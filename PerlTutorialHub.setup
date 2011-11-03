@@ -105,9 +105,9 @@ use IkiWiki::Setup::Standard {
 	# unix users whose commits should be checked by the pre-receive hook
 	#untrusted_committers => [],
 	# gitweb url to show file history ([[file]] substituted)
-	historyurl => 'https://github.com/Perl-Tutorial-Curators/perltut-data/commits/master/[[file]]',
+	historyurl => 'https://github.com/perl-doc-cats/perl-tutorial-org-data/commits/master/[[file]]',
 	# gitweb url to show a diff ([[file]], [[sha1_to]], [[sha1_from]], [[sha1_commit]], and [[sha1_parent]] substituted)
-	diffurl => 'https://github.com/Perl-Tutorial-Curators/perltut-data/compare/[[sha1_parent]]...[[sha1_commit]]#files_bucket',
+	diffurl => 'https://github.com/perl-doc-cats/perl-tutorial-org-data/compare/[[sha1_parent]]...[[sha1_commit]]#files_bucket',
 	# where to pull and push changes (set to empty string to disable)
 	gitorigin_branch => 'origin',
 	# branch that the wiki is stored in
