@@ -30,7 +30,7 @@ use IkiWiki::Setup::Standard {
 	# rcs backend to use
 	rcs => 'git',
 	# plugins to add to the default configuration
-	add_plugins => [qw{goodstuff websetup highlight google plusone easehtmlscrubber userlist sidebar ytemplate}],
+	add_plugins => [qw{goodstuff websetup highlight google plusone easehtmlscrubber userlist sidebar ytemplate tracking}],
 	# plugins to disable
 	disable_plugins => [qw{search edittemplate rawhtml localstyle pagetemplate theme}],
 	# additional directory to search for template files
@@ -286,8 +286,8 @@ use IkiWiki::Setup::Standard {
 	#    favicon, flattr, goodstuff, htmlbalance, localstyle,
 	#    pagetemplate, pingee, pinger, plusone, prettydate,
 	#    recentchanges, recentchangesdiff, relativedate, rsync,
-	#    sidebar, smiley, sortnaturally, tag, testpagespec, transient,
-	#    underlay)
+	#    sidebar, smiley, sortnaturally, tag, testpagespec, tracking,
+	#    transient, underlay)
 	######################################################################
 
 	# aggregate plugin
@@ -349,6 +349,16 @@ use IkiWiki::Setup::Standard {
 	#tag_autocreate => 1,
 	# commit autocreated tag pages
 	tag_autocreate_commit => 1,
+
+	# tracking plugin
+	# Piwik site id
+	#piwik_id => 1,
+	# Piwik base URL - http
+	#piwik_http_url => 'http://www.example.com/piwik/',
+	# Piwik base URL - https
+	#piwik_https_url => 'https://ssl.example.com/piwik/',
+	# Google Analytics tracking id
+	google_analytics_id => 'UA-26732593-1',
 
 	# underlay plugin
 	# extra underlay directories to add
