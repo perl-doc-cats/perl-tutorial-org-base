@@ -28,16 +28,24 @@ sub getsetup {
 sub preprocess {
     my ( %params ) = @_;
 
-    if ( defined $params{yaml} ) {
-        my $yaml = delete $params{yaml};
+    prepare_params( \%params );
+
+    return IkiWiki::Plugin::template::preprocess( %params );
+}
+
+sub prepare_params {
+    my ( $params ) = @_;
+
+    if ( defined $params->{yaml} ) {
+        my $yaml = delete $params->{yaml};
         $yaml .= "\n" if $yaml;
 
         my %data = %{ Load( $yaml ) };
 
-        $params{$_} = $data{$_} for keys %data;
+        $params->{$_} = $data{$_} for keys %data;
     }
 
-    return IkiWiki::Plugin::template::preprocess( %params );
+    return;
 }
 
 1;
