@@ -31,7 +31,7 @@ sub preprocess {
     IkiWiki::Plugin::ytemplate::prepare_params( \%params );
 
     my @tutorials = @{ $params{tutorials} };
-    @tutorials = reverse sort { $a->{lastupdate} <=> $b->{lastupdate} } @tutorials;
+    @tutorials = reverse sort { $a->{lastupdate} cmp $b->{lastupdate} } @tutorials;
     $params{tutorials} = \@tutorials;
 
     return IkiWiki::Plugin::template::preprocess( %params );
