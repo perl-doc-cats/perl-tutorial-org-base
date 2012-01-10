@@ -30,7 +30,7 @@ use IkiWiki::Setup::Standard {
 	# rcs backend to use
 	rcs => 'git',
 	# plugins to add to the default configuration
-	add_plugins => [qw{goodstuff websetup highlight google plusone easehtmlscrubber userlist sidebar ytemplate tracking}],
+	add_plugins => [qw{goodstuff websetup highlight google plusone easehtmlscrubber userlist sidebar ytemplate tracking tuttable}],
 	# plugins to disable
 	disable_plugins => [qw{search edittemplate rawhtml localstyle pagetemplate theme}],
 	# additional directory to search for template files
@@ -252,7 +252,7 @@ use IkiWiki::Setup::Standard {
 	#    graphviz, haiku, headinganchors, img, linkmap, listdirectives,
 	#    map, more, orphans, pagecount, pagestats, poll, polygen,
 	#    postsparkline, progress, shortcut, sparkline, table, template,
-	#    teximg, toc, toggle, version, ytemplate)
+	#    teximg, toc, toggle, tuttable, version, ytemplate)
 	######################################################################
 
 	# calendar plugin
