@@ -50,7 +50,7 @@ use IkiWiki::Setup::Standard {
 	# enable Discussion pages?
 	discussion => 1,
 	# name of Discussion pages
-	discussionpage => 'discussion',
+	discussionpage => 'Discussion',
 	# generate HTML5?
 	html5 => 0,
 	# only send cookies over SSL connections?
