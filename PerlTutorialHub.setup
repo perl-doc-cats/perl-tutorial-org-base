@@ -69,8 +69,8 @@ use IkiWiki::Setup::Standard {
 	numbacklinks => 10,
 	# attempt to hardlink source files? (optimisation for large files)
 	hardlink => 0,
-	# force ikiwiki to use a particular umask
-	#umask => 022,
+	# force ikiwiki to use a particular umask (keywords public, group or private, or a number)
+	#umask => 'public',
 	# group for wrappers to run in
 	#wrappergroup => 'ikiwiki',
 	# extra library and plugin directory
@@ -189,6 +189,8 @@ use IkiWiki::Setup::Standard {
 	# mdwn plugin
 	# enable multimarkdown features?
 	#multimarkdown => 0,
+	# disable use of markdown discount?
+	#nodiscount => 0,
 
 	######################################################################
 	# misc plugins
