@@ -14,7 +14,7 @@ use IkiWiki::Setup::Standard {
 	# users who are wiki admins
 	adminuser => [qw{Mithaldu perltuthub tinita}],
 	# users who are banned from the wiki
-	banned_users => [],
+	banned_users => [qw{PistaPalo}],
 	# where the source of the wiki is located
 	srcdir => '/home/perltuthub/PerlTutorialHub',
 	# where to build the wiki
