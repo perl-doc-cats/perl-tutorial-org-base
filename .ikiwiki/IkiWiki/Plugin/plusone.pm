@@ -1,8 +1,8 @@
 #!/usr/bin/perl
 
 # Idea based on the flattr plugin
-# Copyright © 2006-2011 Joey Hess <joey@ikiwiki.info>
-# Copyright © 2011 Bernd Zeimetz <bernd@bzed.de>
+# Copyright Â© 2006-2011 Joey Hess <joey@ikiwiki.info>
+# Copyright Â© 2011 Bernd Zeimetz <bernd@bzed.de>
 #
 # This program is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by the
@@ -159,7 +159,7 @@ sub plus1js {
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
   })();
 </script>
-<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>};
+<script type="text/javascript" src="https://static1.twitcount.com/js/button.js"></script>};
 
     return $js;
 }
