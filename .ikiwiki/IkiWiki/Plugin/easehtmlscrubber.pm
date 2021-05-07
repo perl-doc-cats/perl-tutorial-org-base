@@ -25,7 +25,7 @@ sub easehtmlscrubber {
     
     my $scrubber = IkiWiki::Plugin::htmlscrubber::scrubber();
 
-    $scrubber->{_rules}{_}{$_} = 1 for qw( data-url data-text data-count );
+    $scrubber->{_rules}{_}{$_} = 1 for qw( data-url data-text data-count data-size data-related data-hashtag data-via );
 
     return $params{content};
 }
